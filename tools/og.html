@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    background: #08090c;
+    font-family: 'Inter', system-ui, sans-serif;
+    color: #f1f5f9;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 90px;
+  }
+  .glow {
+    position: absolute;
+    top: -240px; right: -180px;
+    width: 640px; height: 640px;
+    background: radial-gradient(closest-side, rgba(94,234,212,0.18), transparent 70%);
+    filter: blur(16px);
+  }
+  .glow2 {
+    position: absolute;
+    bottom: -300px; left: -200px;
+    width: 560px; height: 560px;
+    background: radial-gradient(closest-side, rgba(125,211,252,0.08), transparent 70%);
+    filter: blur(16px);
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgba(94,234,212,0.3);
+    border-radius: 999px;
+    padding: 8px 18px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 17px;
+    letter-spacing: 0.08em;
+    color: #5eead4;
+    background: rgba(94,234,212,0.07);
+    width: fit-content;
+    margin-bottom: 34px;
+  }
+  .dot { width: 9px; height: 9px; border-radius: 50%; background: #5eead4; box-shadow: 0 0 0 5px rgba(94,234,212,0.12); }
+  .name {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    color: #64748b;
+    margin-bottom: 14px;
+  }
+  h1 {
+    font-size: 64px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.08;
+    margin-bottom: 38px;
+  }
+  .accent { color: #5eead4; }
+  .stats {
+    display: flex;
+    gap: 64px;
+    border-top: 1px solid #1e2530;
+    padding-top: 30px;
+  }
+  .stat .num { font-size: 34px; font-weight: 800; letter-spacing: -0.02em; }
+  .stat .num .accent { color: #5eead4; }
+  .stat .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #64748b;
+    margin-top: 6px;
+  }
+</style>
+</head>
+<body>
+  <div class="glow"></div>
+  <div class="glow2"></div>
+  <span class="badge"><span class="dot"></span>OPEN TO OFFERS · REMOTE / UKRAINE</span>
+  <div class="name">Andrii Krupa</div>
+  <h1>Senior Full-Stack Engineer.<br /><span class="accent">Payments</span> &amp; <span class="accent">AI-augmented delivery</span>.</h1>
+  <div class="stats">
+    <div class="stat"><div class="num">7<span class="accent">+</span></div><div class="label">years experience</div></div>
+    <div class="stat"><div class="num">50<span class="accent">+</span></div><div class="label">PSP integrations</div></div>
+    <div class="stat"><div class="num">25</div><div class="label">microservices in prod</div></div>
+    <div class="stat"><div class="num">100<span class="accent">%</span></div><div class="label">uptime — tracked</div></div>
+  </div>
+</body>
+</html>

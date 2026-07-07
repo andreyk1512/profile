@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  @page { size: A4; margin: 11mm 13mm; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 9.2pt;
+    line-height: 1.38;
+    color: #1e293b;
+  }
+  a { color: #0d9488; text-decoration: none; }
+
+  .head { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 4mm; }
+  h1 { font-size: 20pt; font-weight: 800; letter-spacing: -0.02em; color: #0f172a; }
+  .title { font-size: 11.5pt; font-weight: 600; color: #0d9488; margin-top: 1mm; }
+  .contacts { text-align: right; font-size: 8.6pt; color: #475569; line-height: 1.6; }
+
+  .summary {
+    border-left: 2.5pt solid #0d9488;
+    padding: 1.6mm 0 1.6mm 4mm;
+    margin-bottom: 3.6mm;
+    color: #334155;
+    font-size: 9.2pt;
+  }
+  .summary strong { color: #0f172a; }
+
+  h2 {
+    font-size: 9.6pt;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #0f172a;
+    border-bottom: 1pt solid #cbd5e1;
+    padding-bottom: 1mm;
+    margin: 3.6mm 0 2.2mm;
+  }
+
+  .skills { display: grid; grid-template-columns: 1fr 1fr; gap: 1mm 6mm; }
+  .skills div { font-size: 9pt; color: #334155; }
+  .skills b { color: #0f172a; font-weight: 700; }
+  .skills .ai b { color: #0d9488; }
+
+  .job { margin-bottom: 2.6mm; break-inside: avoid; }
+  .job__head { display: flex; justify-content: space-between; align-items: baseline; }
+  .job__role { font-size: 9.8pt; font-weight: 700; color: #0f172a; }
+  .job__company { color: #0d9488; font-weight: 600; font-size: 9.2pt; }
+  .job__period { font-size: 8.6pt; color: #64748b; white-space: nowrap; }
+  ul { margin: 1mm 0 0 4mm; }
+  li { margin-bottom: 0.6mm; color: #334155; }
+  li strong { color: #0f172a; font-weight: 600; }
+
+  .proj { margin-bottom: 1.8mm; color: #334155; }
+  .proj b { color: #0f172a; }
+  .proj .tag { color: #0d9488; font-weight: 600; font-size: 8.4pt; }
+</style>
+</head>
+<body>
+
+  <div class="head">
+    <div>
+      <h1>Andrii Krupa</h1>
+      <div class="title">Senior Full-Stack Engineer · Payments &amp; AI-augmented delivery</div>
+    </div>
+    <div class="contacts">
+      akrupa1512@gmail.com<br />
+      linkedin.com/in/andrey-krupa<br />
+      github.com/andreyk1512 · Ukraine (remote)
+    </div>
+  </div>
+
+  <p class="summary">
+    <strong>7+ years</strong> building payment gateways, microservice platforms and SaaS with <strong>TypeScript, Node.js &amp; React</strong>.
+    Currently shipping a global payment gateway: <strong>50+ PSP integrations, 20+ payment methods, 25 microservices on Kubernetes, 100% publicly tracked uptime</strong>.
+    Daily AI-augmented workflow — <strong>Claude Code, custom MCP servers, agentic pipelines</strong> — every line reviewed and tested.
+  </p>
+
+  <h2>Core Skills</h2>
+  <div class="skills">
+    <div><b>Languages:</b> TypeScript, JavaScript</div>
+    <div class="ai"><b>AI Engineering:</b> Claude Code, MCP servers, agent skills &amp; workflows, AI code review, spec-driven development</div>
+    <div><b>Backend:</b> Node.js, NestJS, Express, GraphQL (Apollo), REST, WebSockets, microservices</div>
+    <div><b>Frontend:</b> React, Redux/Saga, React Native, PWA</div>
+    <div><b>Databases:</b> PostgreSQL, MongoDB, MySQL, Redis, TypeORM, Sequelize</div>
+    <div><b>Infra:</b> Docker, Kubernetes, AWS, GCP, Firebase, Kafka, RabbitMQ, CI/CD, Jest</div>
+  </div>
+
+  <h2>Experience</h2>
+
+  <div class="job">
+    <div class="job__head">
+      <div><span class="job__role">Full-Stack Software Engineer</span> · <span class="job__company">CommerceGate — Payment Service Provider</span></div>
+      <span class="job__period">Dec 2023 — Present</span>
+    </div>
+    <ul>
+      <li>Global payment gateway: cards + <strong>20+ alternative payment methods</strong> (PIX, Boleto, Apple Pay, UPI, crypto…) across LATAM, EU, Asia</li>
+      <li><strong>50+ PSP/acquirer integrations</strong> behind a unified processing API; <strong>25 microservices on Kubernetes</strong> (Kafka, PostgreSQL, MongoDB, Redis)</li>
+      <li>Reconciliation, reporting, invoicing; <strong>100% uptime</strong> on the public status page</li>
+      <li>Daily AI-augmented workflow: <strong>Claude Code + custom GitLab MCP tooling</strong> for features, review and debugging</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job__head">
+      <div><span class="job__role">Full-Stack Developer (Freelance)</span> · <span class="job__company">Crypto Investment Platform</span></div>
+      <span class="job__period">Aug 2023 — Dec 2023</span>
+    </div>
+    <ul>
+      <li>Admin + customer React front-ends; NestJS backend with WestWallet API; CI/CD on Google Cloud</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job__head">
+      <div><span class="job__role">Full-Stack Developer</span> · <span class="job__company">Akvelon — NDA project</span></div>
+      <span class="job__period">Nov 2021 — Nov 2023</span>
+    </div>
+    <ul>
+      <li>Progressive Web App on React + Syncfusion + IndexedDB (offline-first); maintainer of a long-running production product</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job__head">
+      <div><span class="job__role">Team Lead / Full-Stack Developer</span> · <span class="job__company">AppSide — ML Platform &amp; CPA Network</span></div>
+      <span class="job__period">Dec 2020 — Nov 2021</span>
+    </div>
+    <ul>
+      <li><strong>Led a team of 3</strong> (2 full-stack + QA) on the CPA Network: CRM, webmaster panel, partner service</li>
+      <li>ML platform: <strong>8 backend microservices</strong>, SAGA orchestration — NestJS, RabbitMQ, Apollo GraphQL, PostgreSQL</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job__head">
+      <div><span class="job__role">Lead Full-Stack Developer</span> · <span class="job__company">Koitechs</span></div>
+      <span class="job__period">Feb 2020 — Dec 2021</span>
+    </div>
+    <ul>
+      <li>COVID-19 statistics web/mobile app (React, React Native, Firebase); video-production SaaS on AWS (S3, Lambda, SNS, SQS)</li>
+      <li>Music school mobile app; versioned blog constructor for a major car brand</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job__head">
+      <div><span class="job__role">Full-Stack Developer</span> · <span class="job__company">FreshCode IT</span></div>
+      <span class="job__period">May 2018 — Feb 2020</span>
+    </div>
+    <ul>
+      <li>TV channel CMS with a custom page builder; news aggregator (WebSockets, Redis caching, multi-source scraping)</li>
+    </ul>
+  </div>
+
+  <h2>Selected Projects</h2>
+  <p class="proj"><b>Global Payment Gateway</b> <span class="tag">fintech</span> — 25 k8s microservices, Kafka, 50+ PSPs, reconciliation &amp; billing; 100% publicly tracked uptime.</p>
+  <p class="proj"><b>Price Parser</b> <span class="tag">AI-assisted build</span> — 65 supplier feeds automated: weekly manual work 7h → 1h (−85%).</p>
+  <p class="proj"><b>Home Finances Bot</b> <span class="tag">fully AI-built · reviewed &amp; tested</span> — Telegram + Monobank webhooks, PDF analytics, integration tests; in production (family use).</p>
+
+</body>
+</html>
