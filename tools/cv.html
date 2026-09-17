@@ -7,27 +7,28 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  @page { size: A4; margin: 11mm 13mm; }
+  @page { size: A4; margin: 10mm 12mm; }
   html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   body {
     font-family: 'Inter', system-ui, sans-serif;
-    font-size: 9.2pt;
-    line-height: 1.38;
+    font-size: 9pt;
+    line-height: 1.34;
     color: #1e293b;
   }
   a { color: #0d9488; text-decoration: none; }
 
-  .head { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 4mm; }
+  .head { display: flex; justify-content: space-between; align-items: flex-start; gap: 6mm; margin-bottom: 3.4mm; }
+  .head > div:first-child { flex: 1 1 auto; min-width: 0; }
   h1 { font-size: 20pt; font-weight: 800; letter-spacing: -0.02em; color: #0f172a; }
   .title { font-size: 11.5pt; font-weight: 600; color: #0d9488; margin-top: 1mm; }
-  .contacts { text-align: right; font-size: 8.6pt; color: #475569; line-height: 1.6; }
+  .contacts { flex: 0 0 auto; white-space: nowrap; text-align: right; font-size: 8.6pt; color: #475569; line-height: 1.6; }
 
   .summary {
     border-left: 2.5pt solid #0d9488;
     padding: 1.6mm 0 1.6mm 4mm;
-    margin-bottom: 3.6mm;
+    margin-bottom: 3.2mm;
     color: #334155;
-    font-size: 9.2pt;
+    font-size: 9pt;
   }
   .summary strong { color: #0f172a; }
 
@@ -39,7 +40,7 @@
     color: #0f172a;
     border-bottom: 1pt solid #cbd5e1;
     padding-bottom: 1mm;
-    margin: 3.6mm 0 2.2mm;
+    margin: 3.1mm 0 1.9mm;
   }
 
   .skills { display: grid; grid-template-columns: 1fr 1fr; gap: 1mm 6mm; }
@@ -47,16 +48,16 @@
   .skills b { color: #0f172a; font-weight: 700; }
   .skills .ai b { color: #0d9488; }
 
-  .job { margin-bottom: 2.6mm; break-inside: avoid; }
+  .job { margin-bottom: 2.1mm; break-inside: avoid; }
   .job__head { display: flex; justify-content: space-between; align-items: baseline; }
   .job__role { font-size: 9.8pt; font-weight: 700; color: #0f172a; }
   .job__company { color: #0d9488; font-weight: 600; font-size: 9.2pt; }
   .job__period { font-size: 8.6pt; color: #64748b; white-space: nowrap; }
   ul { margin: 1mm 0 0 4mm; }
-  li { margin-bottom: 0.6mm; color: #334155; }
+  li { margin-bottom: 0.5mm; color: #334155; }
   li strong { color: #0f172a; font-weight: 600; }
 
-  .proj { margin-bottom: 1.8mm; color: #334155; }
+  .proj { margin-bottom: 1.5mm; color: #334155; }
   .proj b { color: #0f172a; }
   .proj .tag { color: #0d9488; font-weight: 600; font-size: 8.4pt; }
 </style>
@@ -95,7 +96,7 @@
 
   <div class="job">
     <div class="job__head">
-      <div><span class="job__role">Full-Stack Software Engineer</span> · <span class="job__company">CommerceGate — Payment Service Provider</span></div>
+      <div><span class="job__role">Senior Full-Stack Engineer</span> · <span class="job__company">CommerceGate — Payment Service Provider</span></div>
       <span class="job__period">Dec 2023 — Present</span>
     </div>
     <ul>
@@ -118,7 +119,17 @@
 
   <div class="job">
     <div class="job__head">
-      <div><span class="job__role">Full-Stack Developer</span> · <span class="job__company">Akvelon — NDA project</span></div>
+      <div><span class="job__role">Lead Software Engineer (Freelance)</span> · <span class="job__company">Car Parts Search Platform</span></div>
+      <span class="job__period">Apr 2023 — Aug 2023</span>
+    </div>
+    <ul>
+      <li>Built <strong>4 services</strong> (manager, company and customer web apps + shared backend) and an integrated Telegram bot</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job__head">
+      <div><span class="job__role">Senior Software Engineer</span> · <span class="job__company">Akvelon — NDA project</span></div>
       <span class="job__period">Nov 2021 — Nov 2023</span>
     </div>
     <ul>
@@ -139,8 +150,18 @@
 
   <div class="job">
     <div class="job__head">
+      <div><span class="job__role">Technical Consultant</span> · <span class="job__company">Koitechs</span></div>
+      <span class="job__period">Dec 2020 — Nov 2022 (part-time)</span>
+    </div>
+    <ul>
+      <li>Ongoing technical consulting on the COVID-19 statistics platform</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job__head">
       <div><span class="job__role">Lead Full-Stack Developer</span> · <span class="job__company">Koitechs</span></div>
-      <span class="job__period">Feb 2020 — Dec 2021</span>
+      <span class="job__period">Feb 2020 — Dec 2020</span>
     </div>
     <ul>
       <li>COVID-19 statistics web/mobile app (React, React Native, Firebase); video-production SaaS on AWS (S3, Lambda, SNS, SQS)</li>
@@ -162,6 +183,7 @@
   <p class="proj"><b>Global Payment Gateway</b> <span class="tag">fintech</span> — 25 k8s microservices, Kafka, 50+ PSPs, reconciliation &amp; billing; 100% publicly tracked uptime.</p>
   <p class="proj"><b>Price Parser</b> <span class="tag">AI-assisted build</span> — 65 supplier feeds automated: weekly manual work 7h → 1h (−85%).</p>
   <p class="proj"><b>Home Finances Bot</b> <span class="tag">fully AI-built · reviewed &amp; tested</span> — Telegram + Monobank webhooks, PDF analytics, integration tests; in production (family use).</p>
+  <p class="proj"><b>react-image-size</b> <span class="tag">open source · npm</span> — React hook + async utility for image dimensions from a URL (caching, retries, abort, SSR-safe); zero dependencies, typed; 300k+ downloads in the last year.</p>
 
 </body>
 </html>
