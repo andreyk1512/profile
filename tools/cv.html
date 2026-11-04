@@ -40,7 +40,7 @@
     color: #0f172a;
     border-bottom: 1pt solid #cbd5e1;
     padding-bottom: 1mm;
-    margin: 3.1mm 0 1.9mm;
+    margin: 2.8mm 0 1.9mm;
   }
 
   .skills { display: grid; grid-template-columns: 1fr 1fr; gap: 1mm 6mm; }
@@ -48,7 +48,7 @@
   .skills b { color: #0f172a; font-weight: 700; }
   .skills .ai b { color: #0d9488; }
 
-  .job { margin-bottom: 2.1mm; break-inside: avoid; }
+  .job { margin-bottom: 1.8mm; break-inside: avoid; }
   .job__head { display: flex; justify-content: space-between; align-items: baseline; }
   .job__role { font-size: 9.8pt; font-weight: 700; color: #0f172a; }
   .job__company { color: #0d9488; font-weight: 600; font-size: 9.2pt; }
@@ -57,7 +57,7 @@
   li { margin-bottom: 0.5mm; color: #334155; }
   li strong { color: #0f172a; font-weight: 600; }
 
-  .proj { margin-bottom: 1.5mm; color: #334155; }
+  .proj { margin-bottom: 1.3mm; color: #334155; }
   .proj b { color: #0f172a; }
   .proj .tag { color: #0d9488; font-weight: 600; font-size: 8.4pt; }
 </style>
@@ -181,6 +181,7 @@
 
   <h2>Selected Projects</h2>
   <p class="proj"><b>Global Payment Gateway</b> <span class="tag">fintech</span> — 25 k8s microservices, Kafka, 50+ PSPs, reconciliation &amp; billing; 100% publicly tracked uptime.</p>
+  <p class="proj"><b>Guesstimato</b> <span class="tag">solo product</span> — real-time planning poker (<a href="https://guesstimato.com/">guesstimato.com</a>): server-authoritative Socket.IO rooms on Fastify, zod-validated events, security-hardened (rate limits, CSP/HSTS); 102 unit/integration + 12 Playwright E2E tests.</p>
   <p class="proj"><b>Price Parser</b> <span class="tag">AI-assisted build</span> — 65 supplier feeds automated: weekly manual work 7h → 1h (−85%).</p>
   <p class="proj"><b>Home Finances Bot</b> <span class="tag">fully AI-built · reviewed &amp; tested</span> — Telegram + Monobank webhooks, PDF analytics, integration tests; in production (family use).</p>
   <p class="proj"><b>react-image-size</b> <span class="tag">open source · npm</span> — React hook + async utility for image dimensions from a URL (caching, retries, abort, SSR-safe); zero dependencies, typed; 300k+ downloads in the last year.</p>

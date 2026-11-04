@@ -1098,6 +1098,46 @@
 
           <article class="case">
             <div class="case__head">
+              <h3 class="case__title">Guesstimato</h3>
+              <span class="case__tag">Planning poker · Solo product</span>
+            </div>
+            <div class="case__grid">
+              <div class="case__block">
+                <p class="case__label">Challenge</p>
+                <p>Estimation sessions that teams don't dread: join by link with no sign-up, secret votes, a synchronized 3-2-1 reveal — plus live reactions, tomato-throwing and auto-awarded titles.</p>
+              </div>
+              <div class="case__block">
+                <p class="case__label">Built</p>
+                <p>Server-authoritative Socket.IO rooms on Fastify: each client gets its own state projection, so votes stay hidden until reveal; shared zod schemas validate every event. No database — the host's browser recreates the room after a redeploy.</p>
+              </div>
+              <div class="case__block case__block--impact">
+                <p class="case__label">Impact</p>
+                <p>Live in production, hardened after a security audit (host-impersonation guard, proxy-aware rate limits, strict CSP/HSTS). 102 unit &amp; integration tests + 12 Playwright E2E scenarios.</p>
+              </div>
+            </div>
+            <div class="case__foot">
+              <div class="case__stack">
+                <span class="stack-tag">TypeScript</span>
+                <span class="stack-tag">React 19</span>
+                <span class="stack-tag">Fastify</span>
+                <span class="stack-tag">Socket.IO</span>
+                <span class="stack-tag">Zod</span>
+                <span class="stack-tag">Vitest</span>
+                <span class="stack-tag">Playwright</span>
+                <span class="stack-tag">Docker</span>
+                <span class="stack-tag">Cloudflare</span>
+              </div>
+              <div class="case__links">
+                <a class="case__link" href="https://guesstimato.com/" target="_blank" rel="noopener noreferrer">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  guesstimato.com
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="case">
+            <div class="case__head">
               <h3 class="case__title">Machine Learning Platform</h3>
               <span class="case__tag">Microservices · AppSide</span>
             </div>
